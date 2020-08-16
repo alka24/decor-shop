@@ -13,7 +13,6 @@ listView.renderResults(state.decorList.result);
 
 const controlSearch = async () => {
     // 1) Get query from view
-    const query = 'pizza';
     //const query = searchView.getInput();
 
     if (query) {
@@ -29,7 +28,7 @@ const controlSearch = async () => {
         try {
             // 4) Search for item
             await state.search.getResults();
-            console.log(state.search.result);
+            // console.log(state.search.result);
     
             // 5) Render results on UI
 
