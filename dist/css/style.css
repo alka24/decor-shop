@@ -18,8 +18,9 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: #655A56;
-  background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+  color: #333;
+  /* color: #655A56; */
+  /* background-image: linear-gradient(to right bottom, #FBDB89, #F48982); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh - 2 * 4vw); }
@@ -51,8 +52,8 @@ body {
   display: flex;
   align-items: center;
   transition: all .2s; }
-  .btn:hover, .btn-small:hover {
-    transform: scale(1.05); }
+  /* .btn:hover, .btn-small:hover {
+    transform: scale(1.05); } */
   .btn:focus, .btn-small:focus {
     outline: none; }
   .btn > *:first-child, .btn-small > *:first-child {
@@ -490,3 +491,194 @@ body {
   .shopping__item:hover .shopping__delete {
     opacity: 1;
     visibility: visible; }
+
+
+
+.decor_shop{
+  width: 1200px;
+  min-height: 687px;
+  margin: 100px auto 0;
+  max-width: 120rem;
+  /* margin: 4vw auto;
+  background-color: #fff;
+  overflow: hidden; */
+}
+.decor-header{
+  background: none;
+}
+.decor_search{
+  border: 1px solid #eee;
+}
+.main-view{
+  position: relative;
+  float: left;
+  width: 100%;
+  bottom: 0;
+  margin-top: 20px;
+}
+.decor-filter { 
+  /* background-color: #bbb; */
+  width: 20%;
+  min-height: 1000px;
+  float: left;
+  padding: 10px;
+} 
+.decor-items{ 
+  /* background-color: #eee; */
+  width: 80%;
+  min-height: 1000px;
+  float: left;
+  padding: 0 5px;
+} 
+
+button.accordion {
+  cursor: pointer;
+  padding: 18px 18px 8px;
+  width: 20%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+  float: left;
+}
+.filters-expand:not(:last-child){
+  border-bottom: 1px solid #9e9a9a61;
+}
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  position: absolute;
+  top: 100px;
+}
+
+.panel-open {
+  max-height: 100%;
+  transition: max-height 0.3s ease-out
+}
+button.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+button.accordion.active:after {
+  content: "\2212";
+}
+button.accordion {
+  width: 100%;
+  height: 4em;
+  background: none;
+  color:#333;
+}
+div.panel {
+  position: relative;
+  top: initial;
+}
+.main-view .facet-body {
+  padding: 0px 15px;
+  margin-bottom :10px;
+}
+ul{list-style-type: none;}
+.main-view .facet-linkfref {
+  display: block;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.main-view .facet-linkname {
+  font-size: 14px;
+  margin: 5px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+}
+.slider-range{
+  padding: 18px 18px 5px;
+  font-size: 14px;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #F8C487;
+  cursor: pointer;
+  border:1px solid black;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #F8C487;
+  cursor: pointer;
+}
+
+
+.main-view .items {
+  position: relative;
+  min-height: 100px;
+}
+.main-view .items .item {
+  float: left;
+  padding: 0 20px 0 0;
+  text-align: center;
+}
+.main-view .items .item a {
+  text-decoration: none;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+.main-view .items .item .preview {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+.main-view .items .item .imgHolder {
+  background-image: url(https://assets.ajio.com/static/img/plp.png);
+  position: relative;
+  padding-top: 125%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+}
+.main-view .items .item .imgHolder img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+  button.accordion {
+      font-size: 1.1vw;
+  }
+}
+
+

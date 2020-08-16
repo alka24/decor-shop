@@ -1,12 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
+    <title>Decor Shop</title>
 </head>
+
 <body>
-    
+  
+    <div class="decor_shop">
+        <header class="header decor-header">
+            <img src="img/logo.png" alt="Logo" class="header__logo">
+            <form class="search decor_search">
+                <input type="text" class="search__field" placeholder="living room">
+                <button class="btn search__btn">
+                    <svg class="search__icon">
+                        <use href="img/icons.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+          
+        </header>
+        <div class="main-view">
+            <div class="decor-filter">
+                <div id = "leftbox"> 
+                    <div class="filters-expand">
+                        <button class="accordion">Collection</button>
+                        <div class="panel facet-body">
+                            <ul class="rilrtl-list ">
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="All" value="All">
+                                            <label class="facet-linkname" for="All">All</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Living Room Decor" value="Living Room Decor">
+                                            <label class="facet-linkname" for="Living Room Decor">Living Room Decor</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="BedRoom Decor" value="BedRoom Decor">
+                                            <label class="facet-linkname" for="BedRoom Decor">BedRoom Decor</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Wall Decor" value="Wall Decor">
+                                            <label class="facet-linkname" for="Wall Decor">Wall Decor</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Restrooms Decor" value="Restrooms Decor">
+                                            <label class="facet-linkname" for="Restrooms Decor">Restrooms Decor</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filters-expand">
+                        <button class="accordion">Color</button>
+                        <div class="panel facet-body">
+                                <ul class="rilrtl-list ">
+                                    <li class="rilrtl-list-item">
+                                        <div class="facet-linkfref">
+                                            <div class="facet-linkhead">
+                                                <input type="checkbox" name="All" value="All">
+                                                <label class="facet-linkname" for="All">All</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rilrtl-list-item">
+                                        <div class="facet-linkfref">
+                                            <div class="facet-linkhead">
+                                                <input type="checkbox" name="White" value="White">
+                                                <label class="facet-linkname" for="White">White</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rilrtl-list-item">
+                                        <div class="facet-linkfref">
+                                            <div class="facet-linkhead">
+                                                <input type="checkbox" name="Cyan" value="Cyan">
+                                                <label class="facet-linkname" for="Cyan">Cyan</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rilrtl-list-item">
+                                        <div class="facet-linkfref">
+                                            <div class="facet-linkhead">
+                                                <input type="checkbox" name="Teal" value="Teal">
+                                                <label class="facet-linkname" for="Teal">Teal</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rilrtl-list-item">
+                                        <div class="facet-linkfref">
+                                            <div class="facet-linkhead">
+                                                <input type="checkbox" name="Lime" value="Lime">
+                                                <label class="facet-linkname" for="Lime">Lime</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="filters-expand">
+                        <button class="accordion">Category</button>
+                        <div class="panel facet-body">
+                            <ul class="rilrtl-list ">
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="All" value="All">
+                                            <label class="facet-linkname" for="All">All</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Shelves" value="Shelves">
+                                            <label class="facet-linkname" for="Shelves">Shelves</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Tables" value="Tables">
+                                            <label class="facet-linkname" for="Tables">Tables</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Chair" value="Chair">
+                                            <label class="facet-linkname" for="Chair">Chair</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rilrtl-list-item">
+                                    <div class="facet-linkfref">
+                                        <div class="facet-linkhead">
+                                            <input type="checkbox" name="Arm Rest" value="Arm Rest">
+                                            <label class="facet-linkname" for="Arm Rest">Arm Rest</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="slider-range">Price Range</div>
+                        <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                        <span>$1500</span><span style="float:right;">$10,000+</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="decor-items">
+                <div class="items">
+                    <div aria-label="grid" aria-readonly="true" class="ReactVirtualized__Grid items" role="grid" tabindex="0" style="box-sizing: border-box; direction: ltr; height: auto; position: relative; width: 1000px; will-change: transform; overflow: hidden auto;">
+                        <div class="decor_items_list" role="rowgroup" style="width: auto; height: 7575px; max-width: 969px; max-height: 7575px; overflow: hidden; position: relative;">
+                            <!-- <div class="item" style="height: 505px; left: 0px; position: absolute; top: 0px; width: 323px;">
+                                <a class="rilrtl-products-list__link" href="/kipek-block-print-a-line-kurta/p/461188327_grey" target="_blank">
+                                    <div class="preview">
+                                        <div class="imgHolder"><img alt="KIPEK Grey A-line Block Print A-line Kurta" class="rilrtl-lazy-img  rilrtl-lazy-img-loaded" src="https://assets.ajio.com/medias/sys_master/root/h39/h21/16814625947678/kipek_grey_a-line_block_print_a-line_kurta.jpg"></div>
+                                        <div class="contentHolder">
+                                            <div class="brand">KIPEK</div>
+                                            <div class="name">Block Print A-line Kurta</div>
+                                            <div class=""><span class="price  ">Rs. 780</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" style="height: 505px; left: 323px; position: absolute; top: 0px; width: 323px;">
+                                <a class="rilrtl-products-list__link" href="/kipek-block-print-a-line-kurta/p/461188327_grey" target="_blank">
+                                    <div class="preview">
+                                        <div class="imgHolder"><img alt="KIPEK Grey A-line Block Print A-line Kurta" class="rilrtl-lazy-img  rilrtl-lazy-img-loaded" src="https://assets.ajio.com/medias/sys_master/root/h39/h21/16814625947678/kipek_grey_a-line_block_print_a-line_kurta.jpg"><div class="popUp">Quick View</div></div>
+                                        <div class="contentHolder"><div class="brand">KIPEK</div><div class="name">Block Print A-line Kurta</div><div class=""><span class="price  ">Rs. 780</span>&nbsp;<div class="offer-price"><span class="orginal-price">Rs. 2,599</span><span class="discount"> (70% off)</span></div></div></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" style="height: 505px; left: 646px; position: absolute; top: 0px; width: 323px;">
+                                <a class="rilrtl-products-list__link" href="/kipek-block-print-a-line-kurta/p/461188327_grey" target="_blank">
+                                    <div class="preview">
+                                        <div class="imgHolder"><img alt="KIPEK Grey A-line Block Print A-line Kurta" class="rilrtl-lazy-img  rilrtl-lazy-img-loaded" src="https://assets.ajio.com/medias/sys_master/root/h39/h21/16814625947678/kipek_grey_a-line_block_print_a-line_kurta.jpg"><div class="popUp">Quick View</div></div>
+                                        <div class="contentHolder"><div class="brand">KIPEK</div><div class="name">Block Print A-line Kurta</div><div class=""><span class="price  ">Rs. 780</span>&nbsp;<div class="offer-price"><span class="orginal-price">Rs. 2,599</span><span class="discount"> (70% off)</span></div></div></div>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
