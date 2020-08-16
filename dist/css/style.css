@@ -77,9 +77,9 @@ body {
     fill: currentColor; }
 
 .btn-inline {
-  color: #F59A83;
+  color: #333;
   font-size: 1.2rem;
-  border: none;
+  border: 1px solid #333;
   background-color: #F9F5F3;
   padding: .8rem 1.2rem;
   border-radius: 10rem;
@@ -95,7 +95,7 @@ body {
   .btn-inline span {
     margin: 0 .4rem; }
   .btn-inline:hover {
-    color: #F48982;
+    color: #333;
     background-color: #F2EFEE; }
   .btn-inline:focus {
     outline: none; }
@@ -285,21 +285,17 @@ body {
     color: #968B87;
     text-transform: uppercase;
     font-weight: 600; }
-  .results__pages,
-  .likes__pages {
+  .results__pages {
     margin-top: 3rem;
-    padding: 0 3rem; }
-    .results__pages::after,
-    .likes__pages::after {
+    padding: 0 3rem 0 0; }
+    .results__pages::after{
       content: "";
       display: table;
       clear: both; }
-  .results__btn--prev,
-  .likes__btn--prev {
+  .results__btn--prev{
     float: left;
     flex-direction: row-reverse; }
-  .results__btn--next,
-  .likes__btn--next {
+  .results__btn--next{
     float: right; }
 
 .recipe {
@@ -497,11 +493,12 @@ body {
 .decor_shop{
   width: 1200px;
   min-height: 687px;
-  margin: 100px auto 0;
+  /* margin: 100px auto 0; */
   max-width: 120rem;
-  /* margin: 4vw auto;
-  background-color: #fff;
-  overflow: hidden; */
+  padding:0 50px;
+  margin: 4vw auto;
+  /* background-color: #fff;
+  overflow: hidden; */ 
 }
 .decor-header{
   background: none;
@@ -515,20 +512,22 @@ body {
   width: 100%;
   bottom: 0;
   margin-top: 20px;
+  margin-bottom: 70px;
 }
 .decor-filter { 
   /* background-color: #bbb; */
   width: 20%;
-  min-height: 1000px;
+  /* min-height: 1000px; */
   float: left;
   padding: 10px;
 } 
 .decor-items{ 
   /* background-color: #eee; */
   width: 80%;
-  min-height: 1000px;
+  /* min-height: 1000px; */
   float: left;
   padding: 0 5px;
+  padding: 0 5px 0 20px;
 } 
 
 button.accordion {
@@ -646,7 +645,7 @@ input[type=checkbox], input[type=radio] {
 }
 .main-view .items .item {
   float: left;
-  padding: 0 20px 0 0;
+  padding: 0 35px 20px 0;
   text-align: center;
 }
 .main-view .items .item a {
@@ -659,12 +658,13 @@ input[type=checkbox], input[type=radio] {
   transition: all .3s ease-in-out;
 }
 .main-view .items .item .imgHolder {
-  background-image: url(https://assets.ajio.com/static/img/plp.png);
+  /* background-image: url(https://assets.ajio.com/static/img/plp.png); */
   position: relative;
-  padding-top: 125%;
+  /* padding-top: 125%; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 .main-view .items .item .imgHolder img {
   width: 100%;
@@ -673,6 +673,19 @@ input[type=checkbox], input[type=radio] {
   top: 0;
   left: 0;
 }
+.main-view .items .item .contentHolder {
+  font-size: 14px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  background: #fff;
+  padding-top:15px;
+  width: 50%;
+  text-align: left;
+  font-weight: bold;
+}
+
 
 
 @media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {

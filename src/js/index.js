@@ -9,7 +9,6 @@ const state = {};
 
 state.decorList = new List();
 state.decorList.getResults();
-// console.log(state.decorList.result);
 listView.renderResults(state.decorList.result);
 
 const controlSearch = async () => {
@@ -59,3 +58,12 @@ elements.searchForm.addEventListener('submit', e =>{
         });
     };
 })();
+
+elements.resultPages.addEventListener('click', e => {
+    const btn = e.target.closest('.btn-paginate');
+    if (btn) {
+        const goToPage = parseInt(btn.dataset.goto, 10);
+        listView.clearResults();
+        listView.renderResults(state.decorList.result, goToPage);
+    }
+});
